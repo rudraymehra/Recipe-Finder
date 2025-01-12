@@ -2,7 +2,7 @@
         const API_KEY = 'c2909e5d6c16407a9c10c001e1dc881b'; 
         const recipesContainer = document.getElementById('recipes');
         let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
-
+        
         async function searchRecipes() {
             const ingredients = document.getElementById('ingredients').value;
             if (!ingredients.trim()) return;
